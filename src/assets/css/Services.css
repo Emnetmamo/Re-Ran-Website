@@ -1,0 +1,111 @@
+/* src/assets/css/Services.css */
+
+.service_Contanier{
+  /* background-color: #d9ffe0;   */
+  /* margin-top: -100px; */
+}
+
+.hero-section {
+  text-align: center;
+  padding: 20px;
+  /* background: url('../images/serviceBanner.jpg') no-repeat center center; */
+  background-color: #f6ffd9; 
+  background-size: cover;
+  /* margin-top: -90px; */
+  border-radius: 50px;
+}
+
+.services-title {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    background: linear-gradient(45deg, #F97B07, #0C9B78);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+
+  }
+  
+  .service-col {
+    perspective: 1000px; /* Adds perspective to enable 3D effect */
+    margin-bottom: 2rem;
+  }
+  
+  .service-item {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    transform-style: preserve-3d; /* Enables 3D transforms */
+    transition: transform 0.6s;
+    overflow: hidden;
+    border-radius: 10px; /* Optional: adds rounded corners */
+  }
+  
+  /* .service-item:hover {
+    transform: rotateY(180deg); 
+  }
+   */
+  .service-image-container,
+  .service-description-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the backface during flip */
+    font-size: larger;
+  }
+  
+  .service-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform: rotateY(0deg); /* Ensures the image is upright initially */
+  }
+  
+  .service-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: filter 0.6s ease, transform 0.6s ease;
+   
+  }
+  
+  .service-description-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transform: rotateY(180deg); /* Ensures text appears on the back side */
+    transform: translateX(100%) scale(1); /* Initial position for sliding effect */
+  
+
+  }
+  
+  .service-item:hover .service-description-container {
+    transform: translateX(0) scale(1.1); /* Slide in and zoom in effect on hover */
+    z-index: 1; /* Ensures text is on top */
+    transition: transform 0.6s ease, scale 0.6s ease; /* Animation for sliding and zoom */
+
+  }
+  
+  .service-item:hover .service-image {
+    filter: blur(4px); /* Blurs the image on hover */
+    transform: rotateY(180deg); 
+  }
+  
+  .text-center .btn-primary {
+    background-color: #F97B07;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .text-center .btn-primary:hover {
+    background-color: #0C9B78;
+  }
+  

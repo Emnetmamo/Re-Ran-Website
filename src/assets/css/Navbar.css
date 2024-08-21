@@ -1,0 +1,25 @@
+/* src/components/Navbar.css */
+
+.custom-navbar {
+  background-color: black;
+}
+
+.logo {
+  height: 90px;
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-align: center;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: yellow;
+}
+
+
+
+.navbar-collapse {
+  justify-content: flex-end;
+}

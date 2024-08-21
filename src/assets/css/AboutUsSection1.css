@@ -1,0 +1,28 @@
+.about-section {
+    background-color: #f6ffd9; /* Blue background color */
+    padding: 40px 0;
+  }
+  
+  .about-title {
+    font-size: 5rem; /* Increase the font size */
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #F97B07, #0C9B78); /* Apply the gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .about-text {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    color: rgb(15, 15, 15);
+  }
+  
+  .about-image {
+    max-width: 80%; 
+    height: auto;
+    object-fit: contain; /* Ensures the image stays within its boundaries */
+  }
+  

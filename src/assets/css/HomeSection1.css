@@ -1,0 +1,82 @@
+.home-section1 {
+  background-color: black;
+  color: white;
+  padding: 115px 0;
+  overflow: hidden; /* Prevents scrollbars during animation */
+}
+
+.text-col {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease, transform 10s ease;
+}
+
+.text-col.fade-in-slide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.explore-button {
+  background-color: rgb(7, 7, 7) !important;
+  color: yellow !important;
+  border-color: yellow !important;
+  border-radius: 20px !important;
+  font-size: 1rem;
+  padding: 0.5rem 3rem !important;
+  margin-left: 4rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 15s ease, transform 4s ease;
+}
+
+.explore-button.fade-in-slide {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.explore-button:hover {
+  background-color: yellow !important;
+  color: rgb(26, 26, 25) !important;
+  border: 1px solid rgb(16, 16, 16);
+  font-weight: 500 !important;
+}
+
+.text-col h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.text-col p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+}
+
+.image-col {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.section-image {
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .text-col, .image-col {
+    text-align: center;
+  }
+
+  .section-image {
+    max-width: 100%;
+  }
+
+  .explore-button {
+    margin-left: 0;
+  }
+}
