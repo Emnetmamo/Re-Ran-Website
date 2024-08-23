@@ -80,3 +80,24 @@
     margin-left: 0;
   }
 }
+
+.home-section1 {
+  padding: 50px 0; /* Optional padding */
+}
+
+.text-col {
+  padding: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.video-col {
+  padding: 20px;
+}
+
+.right-video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: Add some styling to the video */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+}

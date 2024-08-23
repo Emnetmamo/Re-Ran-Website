@@ -34,7 +34,7 @@ const HomeSection2 = () => {
           <img src={image} alt="Who we are" className="section-image" />
         </Col>
         <Col md={7} className="text-col2">
-          <h2>Who we are?</h2>
+          <h2>Who are we?</h2>
           <p>Re-RaN Electro-mechanical Solutions is a pioneering company dedicated to providing comprehensive electro-mechanical works and consulting services. With a focus on quality, innovation, and customer satisfaction, we aim to be the leading provider of electro-mechanical solutions in the industry.</p>
           <Link to="/about-us">
             <Button className="learn-more-button">Learn More</Button>

@@ -1,11 +1,11 @@
-// src/components/HomeSection4.js
+// src/components/AboutUsSection5.js
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import mission from '../../assets/images/mission.png'; // replace with actual image path
 import vision from '../../assets/images/vision.png'; // replace with actual image path
-import '../../assets/css/HomeSection4.css'; // Import custom CSS for styling
+import '../../assets/css/AboutUsSection5.css'; // Import custom CSS for styling
 
-const HomeSection4 = () => {
+const AboutUsSection5 = () => {
   return (
     <Container className="my-5">
       <Row className="g-4">
@@ -36,4 +36,4 @@ const HomeSection4 = () => {
   );
 };
 
-export default HomeSection4;
+export default AboutUsSection5;

@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import '../../assets/css/HomeSection3.css';
+import '../../assets/css/AboutUsSection4.css';
 import Integrity from '../../assets/images/Integrity.png';
 import Innovation from '../../assets/images/Innovation.png';
 import Customer_focused from '../../assets/images/Customer_focused.png';
 import Sustainability from '../../assets/images/Sustainability.png';
 import Quality from '../../assets/images/Quality.png';
 
-const HomeSection3 = () => {
+const AboutUsSection4 = () => {
   useEffect(() => {
     const section = document.querySelector('.home-section3');
     const title = document.querySelector('.core-values-title');
@@ -67,4 +67,4 @@ const HomeSection3 = () => {
   );
 };
 
-export default HomeSection3;
+export default AboutUsSection4;

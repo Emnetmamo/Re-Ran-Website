@@ -1,8 +1,8 @@
 // src/components/Navbar.js
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
-import { FaHome, FaInfoCircle, FaServicestack, FaBox, FaEnvelope } from 'react-icons/fa';
+import { FaHome, FaInfoCircle, FaServicestack, FaEnvelope } from 'react-icons/fa';
 import '../assets/css/Navbar.css';
 import logo from "../assets/images/Logo.png"
 
@@ -23,9 +23,6 @@ const NavBar = () => {
           </Nav.Link>
           <Nav.Link as={NavLink} to="/services" className="nav-link" activeClassName="active-link">
             <FaServicestack /><br />Services
-          </Nav.Link>
-          <Nav.Link as={NavLink} to="/products" className="nav-link" activeClassName="active-link">
-            <FaBox /><br />Products
           </Nav.Link>
           <Nav.Link as={NavLink} to="/contact-us" className="nav-link" activeClassName="active-link">
             <FaEnvelope /><br />Contact Us

@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Button, Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import '../../assets/css/HomeSection1.css'; // Import custom CSS for styling
+import vid from '../../assets/images/re-ran.mp4';
+import '../../assets/css/HomeSection1.css'; 
 
 const HomeSection1 = () => {
   useEffect(() => {
@@ -23,8 +24,16 @@ const HomeSection1 = () => {
               <Button className="explore-button">Explore</Button>
             </Link>
           </Col>
-          <Col md={6} className="image-col">
-            {/* Image content */}
+          <Col md={6} className="video-col">
+            <video
+              autoPlay
+              loop
+              muted
+              className="right-video"
+            >
+              <source src={vid} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </Col>
         </Row>
       </Container>
