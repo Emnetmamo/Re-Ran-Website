@@ -1,57 +1,42 @@
 /* src/components/HomeSection4.css */
-
-.custom-card {
-    background-color: #D9F5FF !important;
-    border: none;
-    border-radius: 10px !important; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(217, 185, 26, 0.5) !important; /* Subtle shadow */
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Equal height for cards */
-    margin: 20px;
-  }
-  
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    height: 100%; /* Ensure content is centered vertically */
-  }
-  
-  .card-title {
-    font-size: 2rem !important;
-    margin-bottom: 1rem;
-    background: linear-gradient(45deg, #F97B07, #0C9B78); /* Gradient color */
+.section{
+  background-color: #f6ffd9; /* Blue background color */
+}
+  .section-title {
+    font-size: 40px;
+    background: linear-gradient(45deg, #F97B07, #0C9B78);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
   }
   
-  .card-text {
-    font-size: 1rem; /* Adjust text size */
-    margin-bottom: 1.5rem;
+  .section-text {
+    font-size: 1.5rem !important;
+    text-align: center;
+    padding: 2rem !important;
+    color: rgb(15, 15, 15) !important;
+    font-weight: 400 !important;
   }
   
-  .card-img {
-    width: 30% !important; /* Adjust image width */
-    height: 30% !important; /* Maintain aspect ratio */
-    margin-top: 1rem; /* Space between text and image */
+  
+  .section-img1 {
+    max-width: 100%;
+    height: auto;
+    max-height:250px;
+    margin-top: 20px;
   }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-    .card-title {
-      font-size: 1.5rem; /* Adjust title size for smaller screens */
-    }
-  
-    .card-text {
-      font-size: 0.9rem; /* Adjust text size for smaller screens */
-    }
-  
-    .card-img {
-      width: 100%; /* Adjust image width for smaller screens */
+    
+  .section-img2 {
+    max-width: 100%;
+    height: auto;
+    max-height:200px;
+    margin-top: 20px;
+  }
+  @media (min-width: 768px) {
+    .section-text {
+      max-width: 100%;
     }
   }
   

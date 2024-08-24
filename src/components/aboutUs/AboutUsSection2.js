@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import Slider from 'react-slick'; // Assume you're using react-slick for the slider
 import partnerLogo1 from '../../assets/images/logo.jpg'; // replace with actual images
-import partnerLogo2 from '../../assets/images/cat.jpeg';
+import partnerLogo2 from '../../assets/images/logo.jpg';
 import partnerLogo3 from '../../assets/images/logo.jpg';
 import '../../assets/css/AboutUsSection2.css'; // Import custom CSS for styling
 

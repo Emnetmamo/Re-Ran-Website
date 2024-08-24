@@ -1,6 +1,6 @@
 // src/components/Services.js
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import serviceImage1 from '../assets/images/service1.png'; 
 import serviceImage2 from '../assets/images/service2.png';
 import serviceImage3 from '../assets/images/service3.png';
